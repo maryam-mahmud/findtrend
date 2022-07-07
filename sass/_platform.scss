@@ -1,0 +1,36 @@
+.platform{
+    align-items: center;
+    padding: 10rem;
+    gap: 8rem;
+
+    @include respond(phone){
+        padding: 10px;
+    }
+ 
+
+    h1{font-size: 6rem;}
+
+    &__card-box{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-auto-rows: 15rem;
+        grid-gap: 2rem;
+        grid-row-gap: 3rem;
+
+        div{
+            padding: 2rem;
+            background: #F5F5F5;
+            border-radius: 8px;
+        }
+
+        figure{
+            width: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,48 @@
+.service{
+    padding:8rem 5rem;
+    position: relative;
+    align-items: center;
+    background: rgba(168, 255, 53, 1);
+
+    &__card-box{
+        background: rgba(245, 245, 245, 1);
+        height: 20rem;
+        width: 40rem;
+        border: 5px;
+
+    }
+
+    h1{font-size: 7rem;}
+
+    &__card-box-small{
+        height: 6rem;
+        width: 30rem;
+        background: rgba(3, 3, 3, 0.8);
+
+
+        input::placeholder{
+            color: #fff;
+            font-size: 2rem;
+        }
+    }
+
+    [class^="fx-col"]{
+        align-items: center;
+        text-align: center;
+        p{transform: rotate(6deg);}
+
+        & > :first-child{
+            transform: translateX(2rem);
+            // @include respond(tab-port){
+            //     transform: ;
+            // }
+        }
+
+       
+    }
+}
+
+.solution{
+    padding: 15rem 8rem;
+    h1{font-size: 6rem;}
+}

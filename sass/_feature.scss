@@ -1,0 +1,29 @@
+.feature{
+    padding: 8rem 5rem;
+
+    @include respond(phone){
+        padding: 1rem;
+    }
+ 
+    &__card-box{
+        width: 100%;
+        background-color: #fff;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-gap: 1rem;
+    }
+
+    &__card{
+        figure{
+            height: 35rem;
+            width: 100%;
+            background-color:rgba(246, 246, 246, 1);
+
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
