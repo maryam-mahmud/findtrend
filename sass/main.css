@@ -20,7 +20,7 @@ html {
 }
 @media only screen and (max-width: 37.5em) {
   html {
-    font-size: 32%;
+    font-size: 35%;
   }
 }
 
@@ -28,7 +28,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  background-color: rgb(221, 221, 221);
+  background-color: white;
   min-height: 100vh;
 }
 body p {
@@ -807,6 +807,23 @@ select, button {
 @media only screen and (max-width: 37.5em) {
   .footer {
     padding: 1rem;
+    flex-direction: column;
+  }
+}
+.footer > :first-child {
+  background-color: blue;
+}
+@media only screen and (max-width: 37.5em) {
+  .footer > :first-child {
+    flex-basis: 99%;
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .footer ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-items: center;
   }
 }
 .footer figure {

@@ -3,8 +3,26 @@
 
     @include respond(phone){
         padding: 1rem;
+        flex-direction: column;
     }
 
+    & > :first-child{
+        background-color: blue;
+        @include respond(phone){
+           flex-basis: 99%;
+           margin-bottom: 2rem
+        }
+    }
+
+    ul{
+        @include respond(phone){
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            justify-items: center;
+        }
+    }
+
+    
     figure{
 
         height: 6rem;
