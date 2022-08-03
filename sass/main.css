@@ -810,9 +810,6 @@ select, button {
     flex-direction: column;
   }
 }
-.footer > :first-child {
-  background-color: blue;
-}
 @media only screen and (max-width: 37.5em) {
   .footer > :first-child {
     flex-basis: 99%;
